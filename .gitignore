@@ -2,3 +2,6 @@
 MessageHub.Client/obj
 MessageHub/obj
 .vs
+MessageHub.Server/obj
+MessageHub.Server/Platforms
+MessageHub.ViewModel/obj
