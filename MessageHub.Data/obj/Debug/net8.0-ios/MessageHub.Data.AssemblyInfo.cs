@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MessageHub.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d176bc4ccf2fc898c86b5abcf92d7d314a8e50b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MessageHub.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MessageHub.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
