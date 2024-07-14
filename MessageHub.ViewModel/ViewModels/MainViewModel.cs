@@ -14,10 +14,14 @@ namespace MessageHub.ViewModel.ViewModels
         private Servers _server;
         private Clients _client;
         private bool _isServerRunning;
+        private string _serverStatus;
+        private string _connectionStatus;
+        private string _messageToSend;
 
         public RelayCommand StartServerCommand { get; set; }
         public RelayCommand StopServerCommand { get; set; }
         public RelayCommand ConnectToServerCommand { get; set; }
+        public RelayCommand SendMessageCommand { get; set; }
 
         public MainViewModel()
         {
@@ -25,13 +29,19 @@ namespace MessageHub.ViewModel.ViewModels
             {
                 LogMessages += arg + Environment.NewLine;
             });
+
             TcpClient tcpClient = new TcpClient();
             MessageModel messageModel = new MessageModel { UserName = "JohnDoe" };
             _client = new Clients(tcpClient, messageModel);
             _server = new Servers();
+
             StartServerCommand = new RelayCommand(o => StartServer(), o => !IsServerRunning);
             StopServerCommand = new RelayCommand(o => StopServer(), o => IsServerRunning);
             ConnectToServerCommand = new RelayCommand(o => ConnectToServer(), o => !IsServerRunning);
+            SendMessageCommand = new RelayCommand(o => SendMessage(), o => !string.IsNullOrEmpty(MessageToSend));
+
+            ServerStatus = "Stopped";
+            ConnectionStatus = "Disconnected";
         }
 
         private string _logMessages;
@@ -58,16 +68,43 @@ namespace MessageHub.ViewModel.ViewModels
                 }
             }
         }
-        public void LogMessage(string message)
+
+        public string ServerStatus
         {
-            LogMessages += message + Environment.NewLine;
+            get => _serverStatus;
+            set
+            {
+                _serverStatus = value;
+                OnPropertyChanged();
+            }
         }
+
+        public string ConnectionStatus
+        {
+            get => _connectionStatus;
+            set
+            {
+                _connectionStatus = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string MessageToSend
+        {
+            get => _messageToSend;
+            set
+            {
+                _messageToSend = value;
+                OnPropertyChanged();
+            }
+        }
+
         private void ConnectToServer()
         {
             Task.Run(() =>
             {
                 _client.ConnectToServer();
-                IsServerRunning = true;
+                ConnectionStatus = "Connected";
             });
         }
 
@@ -76,6 +113,7 @@ namespace MessageHub.ViewModel.ViewModels
             Task.Run(() =>
             {
                 _server.Start();
+                ServerStatus = "Running";
                 IsServerRunning = true;
             });
         }
@@ -83,7 +121,19 @@ namespace MessageHub.ViewModel.ViewModels
         private void StopServer()
         {
             _server.Stop();
+            ServerStatus = "Stopped";
             IsServerRunning = false;
+        }
+
+        private void SendMessage()
+        {
+            Task.Run(() =>
+            {
+                // Implement the logic to send the message to the server
+                _client.SendMessage(MessageToSend);
+                LogMessages += $"Sent: {MessageToSend}\n";
+                MessageToSend = string.Empty;
+            });
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

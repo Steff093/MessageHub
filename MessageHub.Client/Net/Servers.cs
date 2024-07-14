@@ -59,8 +59,8 @@ private void HandleClient(TcpClient client)
             stream.Write(responseBuffer, 0, responseBuffer.Length);
         }
 
-        client.Close();
-        MessagingCenter.Send(this, "LogMessage", "Client disconnected.");
+        //client.Close();
+        //MessagingCenter.Send(this, "LogMessage", "Client disconnected.");
     }
     catch (Exception ex)
     {

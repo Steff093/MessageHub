@@ -45,5 +45,27 @@ namespace MessageHub.Client
                 MessagingCenter.Send(this, "Failed to connect to server: " + ex.Message);
             }
         }
+
+        public void SendMessage(string message)
+        {
+            try
+            {
+                if (TCPClient.Connected)
+                {
+                    NetworkStream stream = TCPClient.GetStream();
+                    byte[] buffer = Encoding.ASCII.GetBytes(message);
+                    stream.Write(buffer, 0, buffer.Length);
+                    Console.WriteLine("Message sent to server.");
+                }
+                else
+                {
+                    Console.WriteLine("Client is not connected to the server.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Failed to send message: " + ex.Message);
+            }
+        }
     }
 }
