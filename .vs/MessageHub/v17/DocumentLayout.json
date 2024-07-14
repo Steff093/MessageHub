@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\source\\MessageHub\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{30A3942D-9BE3-4B77-98AC-F93467F14484}|MessageHub.Client\\MessageHub.Client.csproj|d:\\source\\messagehub\\messagehub.client\\messagehub.client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{30A3942D-9BE3-4B77-98AC-F93467F14484}|MessageHub.Client\\MessageHub.Client.csproj|solutionrelative:messagehub.client\\messagehub.client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30A3942D-9BE3-4B77-98AC-F93467F14484}|MessageHub.Client\\MessageHub.Client.csproj|d:\\source\\messagehub\\messagehub.client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30A3942D-9BE3-4B77-98AC-F93467F14484}|MessageHub.Client\\MessageHub.Client.csproj|solutionrelative:messagehub.client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3037CD6B-646B-4D9E-B1AD-ECCCC192DF24}|MessageHub.Data\\MessageHub.Data.csproj|d:\\source\\messagehub\\messagehub.data\\messagehub.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3037CD6B-646B-4D9E-B1AD-ECCCC192DF24}|MessageHub.Data\\MessageHub.Data.csproj|solutionrelative:messagehub.data\\messagehub.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Client.cs",
+              "DocumentMoniker": "D:\\source\\MessageHub\\MessageHub.Client\\Client.cs",
+              "RelativeDocumentMoniker": "MessageHub.Client\\Client.cs",
+              "ToolTip": "D:\\source\\MessageHub\\MessageHub.Client\\Client.cs",
+              "RelativeToolTip": "MessageHub.Client\\Client.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T13:22:38.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MessageHub.Client.csproj",
+              "DocumentMoniker": "D:\\source\\MessageHub\\MessageHub.Client\\MessageHub.Client.csproj",
+              "RelativeDocumentMoniker": "MessageHub.Client\\MessageHub.Client.csproj",
+              "ToolTip": "D:\\source\\MessageHub\\MessageHub.Client\\MessageHub.Client.csproj",
+              "RelativeToolTip": "MessageHub.Client\\MessageHub.Client.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-14T13:22:31.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MessageHub.Data.csproj",
+              "DocumentMoniker": "D:\\source\\MessageHub\\MessageHub.Data\\MessageHub.Data.csproj",
+              "RelativeDocumentMoniker": "MessageHub.Data\\MessageHub.Data.csproj",
+              "ToolTip": "D:\\source\\MessageHub\\MessageHub.Data\\MessageHub.Data.csproj",
+              "RelativeToolTip": "MessageHub.Data\\MessageHub.Data.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-14T13:22:31.035Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageHub.UserInterface", "MessageHub\MessageHub.UserInterface.csproj", "{982311BB-DD51-4D0F-9339-E74CA4895163}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageHub.UserInterface", "MessageHub\MessageHub.UserInterface.csproj", "{982311BB-DD51-4D0F-9339-E74CA4895163}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageHub.Client", "MessageHub.Client\MessageHub.Client.csproj", "{30A3942D-9BE3-4B77-98AC-F93467F14484}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageHub.Client", "MessageHub.Client\MessageHub.Client.csproj", "{30A3942D-9BE3-4B77-98AC-F93467F14484}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageHub.Data", "MessageHub.Data\MessageHub.Data.csproj", "{3037CD6B-646B-4D9E-B1AD-ECCCC192DF24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageHub.Data", "MessageHub.Data\MessageHub.Data.csproj", "{3037CD6B-646B-4D9E-B1AD-ECCCC192DF24}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{829B0A8D-ED04-4B16-9C77-5F92AB8FCC29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageHub.ViewModel", "MessageHub.ViewModel\MessageHub.ViewModel.csproj", "{60F5F640-C6F3-4A20-BC01-13ACAE6CEB78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageHub.ViewModel", "MessageHub.ViewModel\MessageHub.ViewModel.csproj", "{60F5F640-C6F3-4A20-BC01-13ACAE6CEB78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageHub.Server", "MessageHub.Server\MessageHub.Server.csproj", "{2EDDCF4F-2E20-4C61-B3A3-B7A543196896}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{60F5F640-C6F3-4A20-BC01-13ACAE6CEB78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60F5F640-C6F3-4A20-BC01-13ACAE6CEB78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60F5F640-C6F3-4A20-BC01-13ACAE6CEB78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EDDCF4F-2E20-4C61-B3A3-B7A543196896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EDDCF4F-2E20-4C61-B3A3-B7A543196896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EDDCF4F-2E20-4C61-B3A3-B7A543196896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EDDCF4F-2E20-4C61-B3A3-B7A543196896}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{30A3942D-9BE3-4B77-98AC-F93467F14484} = {829B0A8D-ED04-4B16-9C77-5F92AB8FCC29}
 		{3037CD6B-646B-4D9E-B1AD-ECCCC192DF24} = {829B0A8D-ED04-4B16-9C77-5F92AB8FCC29}
 		{60F5F640-C6F3-4A20-BC01-13ACAE6CEB78} = {829B0A8D-ED04-4B16-9C77-5F92AB8FCC29}
+		{2EDDCF4F-2E20-4C61-B3A3-B7A543196896} = {829B0A8D-ED04-4B16-9C77-5F92AB8FCC29}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4BD58CE0-7BAB-42CD-8AB9-C16D341F25E3}

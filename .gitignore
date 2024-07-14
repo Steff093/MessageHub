@@ -5,3 +5,8 @@ MessageHub/obj
 MessageHub.Server/obj
 MessageHub.Server/Platforms
 MessageHub.ViewModel/obj
+MessageHub.ViewModel/obj
+MessageHub.Data/obj
+MessageHub.Client/obj
+MessageHub/obj
+.vs/ProjectEvaluation
