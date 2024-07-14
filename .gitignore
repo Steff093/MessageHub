@@ -10,3 +10,11 @@ MessageHub.Data/obj
 MessageHub.Client/obj
 MessageHub/obj
 .vs/ProjectEvaluation
+MessageHub/bin
+MessageHub.Client/bin
+MessageHub.Data/bin
+MessageHub.Server/obj
+MessageHub.ViewModel/bin
+.vs/MessageHub/DesignTimeBuild
+.vs/MessageHub/FileContentIndex
+.vs/MessageHub/v17

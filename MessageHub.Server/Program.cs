@@ -1,19 +1,16 @@
-﻿using Network;
-using System.Net;
-using System.Net.Sockets;
+﻿using MessageHub.Client.Net;
 
 namespace MessageHub.Server
 {
     // All the code in this file is included in all platforms.
     public class Program
     {
-        static TcpListener _listener {  get; set; }
         static void Main(string[] args)
         {
-            _listener = new TcpListener(IPAddress.Parse("127.0.01", "7000"));
-            _listener.Start();
+            Servers server = new Servers();
+            server.Start();
 
-            var client = _listener.AcceptTcpClient();
+            Console.WriteLine("Server started!");
         }
     }
 }
