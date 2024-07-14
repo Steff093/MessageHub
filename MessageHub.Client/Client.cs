@@ -12,7 +12,6 @@ namespace MessageHub.Client
         {
             TCPClient = client;
             UID = Guid.NewGuid();
-            Client = new Client();
             Console.WriteLine($"{DateTime.Now} Client sucessfull logged with {messageModel.UserName}");     
         }
     }
