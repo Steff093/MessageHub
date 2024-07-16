@@ -1,22 +1,31 @@
-﻿using MessageHub.Client;
+﻿
+using CommunityToolkit.Mvvm.ComponentModel;
+using MessageHub.Client;
 using MessageHub.Client.Net;
 using MessageHub.Data.Model;
 using MessageHub.ViewModel.Core;
-using Microsoft.Maui.Controls;
 using System.ComponentModel;
 using System.Net.Sockets;
 using System.Runtime.CompilerServices;
 
 namespace MessageHub.ViewModel.ViewModels
 {
-    public class MainViewModel : INotifyPropertyChanged
+    public class MainViewModel : ObservableObject
     {
+        [ObservableProperty]
         private Servers _server;
+        [ObservableProperty]
         private Clients _client;
+        [ObservableProperty]
         private bool _isServerRunning;
+        [ObservableProperty]
         private string _serverStatus;
+        [ObservableProperty]
         private string _connectionStatus;
+        [ObservableProperty]
         private string _messageToSend;
+        [ObservableProperty]
+        private string _logMessages;
 
         public RelayCommand StartServerCommand { get; set; }
         public RelayCommand StopServerCommand { get; set; }
@@ -25,6 +34,7 @@ namespace MessageHub.ViewModel.ViewModels
 
         public MainViewModel()
         {
+
             MessagingCenter.Subscribe<Servers, string>(this, "LogMessage", (sender, arg) =>
             {
                 LogMessages += arg + Environment.NewLine;
@@ -42,61 +52,6 @@ namespace MessageHub.ViewModel.ViewModels
 
             ServerStatus = "Stopped";
             ConnectionStatus = "Disconnected";
-        }
-
-        private string _logMessages;
-
-        public string LogMessages
-        {
-            get => _logMessages;
-            set
-            {
-                _logMessages = value;
-                OnPropertyChanged();
-            }
-        }
-
-        public bool IsServerRunning
-        {
-            get { return _isServerRunning; }
-            set
-            {
-                if (_isServerRunning != value)
-                {
-                    _isServerRunning = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-        public string ServerStatus
-        {
-            get => _serverStatus;
-            set
-            {
-                _serverStatus = value;
-                OnPropertyChanged();
-            }
-        }
-
-        public string ConnectionStatus
-        {
-            get => _connectionStatus;
-            set
-            {
-                _connectionStatus = value;
-                OnPropertyChanged();
-            }
-        }
-
-        public string MessageToSend
-        {
-            get => _messageToSend;
-            set
-            {
-                _messageToSend = value;
-                OnPropertyChanged();
-            }
         }
 
         private void ConnectToServer()
