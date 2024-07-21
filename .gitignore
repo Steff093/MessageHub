@@ -18,3 +18,7 @@ MessageHub.ViewModel/bin
 .vs/MessageHub/DesignTimeBuild
 .vs/MessageHub/FileContentIndex
 .vs/MessageHub/v17
+MessageHub/obj
+MessageHub.Client/obj
+MessageHub.Data/obj
+MessageHub.ViewModel/obj
