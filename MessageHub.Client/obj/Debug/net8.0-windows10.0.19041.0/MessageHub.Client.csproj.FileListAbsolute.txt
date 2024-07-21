@@ -1,0 +1,16 @@
+D:\source\MessageHub\MessageHub.Client\bin\Debug\net8.0-windows10.0.19041.0\MessageHub.Client.deps.json
+D:\source\MessageHub\MessageHub.Client\bin\Debug\net8.0-windows10.0.19041.0\MessageHub.Client.dll
+D:\source\MessageHub\MessageHub.Client\bin\Debug\net8.0-windows10.0.19041.0\MessageHub.Client.pdb
+D:\source\MessageHub\MessageHub.Client\bin\Debug\net8.0-windows10.0.19041.0\MessageHub.Data.dll
+D:\source\MessageHub\MessageHub.Client\bin\Debug\net8.0-windows10.0.19041.0\MessageHub.Data.pdb
+D:\source\MessageHub\MessageHub.Client\obj\Debug\net8.0-windows10.0.19041.0\MessageHub.Client.csproj.AssemblyReference.cache
+D:\source\MessageHub\MessageHub.Client\obj\Debug\net8.0-windows10.0.19041.0\MessageHub.Client.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\MessageHub\MessageHub.Client\obj\Debug\net8.0-windows10.0.19041.0\MessageHub.Client.AssemblyInfoInputs.cache
+D:\source\MessageHub\MessageHub.Client\obj\Debug\net8.0-windows10.0.19041.0\MessageHub.Client.AssemblyInfo.cs
+D:\source\MessageHub\MessageHub.Client\obj\Debug\net8.0-windows10.0.19041.0\MessageHub.Client.csproj.CoreCompileInputs.cache
+D:\source\MessageHub\MessageHub.Client\obj\Debug\net8.0-windows10.0.19041.0\MessageHub.Client.sourcelink.json
+D:\source\MessageHub\MessageHub.Client\obj\Debug\net8.0-windows10.0.19041.0\MessageH.FB6A99EE.Up2Date
+D:\source\MessageHub\MessageHub.Client\obj\Debug\net8.0-windows10.0.19041.0\MessageHub.Client.dll
+D:\source\MessageHub\MessageHub.Client\obj\Debug\net8.0-windows10.0.19041.0\refint\MessageHub.Client.dll
+D:\source\MessageHub\MessageHub.Client\obj\Debug\net8.0-windows10.0.19041.0\MessageHub.Client.pdb
+D:\source\MessageHub\MessageHub.Client\obj\Debug\net8.0-windows10.0.19041.0\ref\MessageHub.Client.dll

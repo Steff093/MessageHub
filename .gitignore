@@ -1,0 +1,8 @@
+﻿.vs/MessageHub
+MessageHub.Client/bin
+MessageHub.Data/bin
+MessageHub.Data/obj
+MessageHub.Server/obj
+MessageHub.ViewModel/bin
+MessageHub.ViewModel/obj
+MessageHub.ViewModel/obj
